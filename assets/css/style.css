@@ -1,0 +1,909 @@
+:root {
+    --primary-orange-color: orange;
+    --primary-green-color: green;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#header {
+    position: relative;
+    width: 100%;  
+    height: 500px;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header img {
+    width: 100%;
+}
+
+#header .header-menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    z-index: 10;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+
+
+#header .sticky {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+#header .sticky ul a{
+    color: #333;
+}
+
+#header .sticky ul a:hover {
+    color: var(--primary-orange-color);
+}
+
+#header .sticky ul .home {
+    color: var(--primary-orange-color);
+}
+
+.header-menu .logo {
+    color: var(--primary-orange-color);
+    cursor: pointer;
+}
+
+.header-menu span {
+    color: var(--primary-green-color);
+}
+
+.header-menu span:hover,
+.header-menu .menu a:hover {
+    color: var(--primary-orange-color);
+}
+
+.header-menu .menu {
+    display: flex;
+    font-size: 18px;
+}
+
+.header-menu li {
+    list-style: none;
+    position: relative;
+}
+
+.header-menu  a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-menu .logo a {
+    color: var(--primary-orange-color);
+}
+
+#header .text-header a {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#header .text-header a:hover {
+    color: var(--primary-orange-color);
+}
+
+.header-menu .menu .home {
+    color: var(--primary-orange-color);
+}
+
+.subnav {
+    width: 170px;
+    background-color: white;
+    font-weight: 300;
+    position: absolute;
+    top: 30px;
+    font-size: 16px;
+    padding: 10px;
+    left: 0;
+    display: none;
+}
+
+.header-menu li:hover .subnav {
+    display: block;
+    color:#333;
+}
+
+.subnav li {
+    padding-top: 8px;
+}
+
+.subnav a {
+    color: black;
+}
+
+#header .text-header {
+    position: absolute;
+    bottom: 100px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+.text-header h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.text-header span {
+    color: var(--primary-orange-color);
+}
+
+.text-header p {
+    margin: 20px auto;
+}
+
+.text-header button {
+    padding: 15px 20px;
+    margin: 5px;
+    background: var(--primary-green-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid var(--primary-green-color);
+}
+
+.text-header button:hover {
+    background-color: transparent;
+}
+
+.text-header button.first:first-child {
+    background-color: var(--primary-orange-color);
+    border: 2px solid var(--primary-orange-color);
+}
+
+.text-header button:first-child:hover {
+    background-color: transparent;
+}
+
+
+/* End header */
+
+#container {
+    letter-spacing: 1px;
+}
+
+#container .book {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+}
+
+#container .w-90 {
+    display: flex;
+    height: auto;
+    color: #333;
+}
+
+#container .book_des {
+    padding-right: 30px;
+    padding-top: 100px;
+}
+
+#container p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+#container h3 {
+    color: var(--primary-green-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+#container h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+#container form {
+    padding: 35px 25px;
+    width: 100%;
+    background: var(--primary-orange-color);
+}
+
+#container form input,
+#container form button {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+}
+
+#container form button {
+    background-color: #fff;
+    color: var(--primary-orange-color);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#container form button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+#container .about {
+    margin-top: 70px;
+}
+
+#container .about img {
+    border-radius: 10px;
+}
+
+#container .about .book_des {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+#container .about button,
+#container .feature button {
+    padding: 15px 25px;
+    border: 2px solid var(--primary-orange-color);
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: 0.3s;
+    margin: 30px auto;
+    background-color: var(--primary-orange-color);
+}
+
+#container .about button:hover,
+#container .feature button:hover {
+    background-color: transparent;
+    color: var(--primary-orange-color);
+}
+
+#container .feature {
+    margin-top: 70px;
+    color: #333;
+}
+
+#container .key-feature {
+    margin-right: 30px;
+}
+
+#container .pic-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#container .pic-feature .item {
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#container .pic-feature img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+#container .pic-feature img:hover {
+    transform: scale(1.1);
+}
+
+#container .more-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#container .more-feature h2 {
+    margin: 15px 0;
+}
+
+#container .feature button {
+    width: 100%;
+}
+
+#container .food-menu {
+    margin-top: 60px;
+    padding-top: 60px;
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+#container .food-menu .w-90 {
+    justify-content: space-between;
+}
+
+#container .food-menu .item {
+    width: 31%;
+}
+
+#container .food-menu img {
+    width: 100px;
+}
+
+#container .food-menu h2 {
+    margin: 10px;
+}
+
+#container .food-menu p {
+    margin-bottom: 20px;
+}
+
+#container .food-menu a {
+    color: var(--primary-orange-color);
+}
+
+#container .food-menu .item {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 4px 1px 10px #333;
+}
+
+#container .food-menu .item:hover {
+    box-shadow: 1px 4px 10px #333;
+}
+
+#container .choose-food.w-90 {
+    margin-top: 70px;
+    color: #333;
+    display: block;
+    background-color: white;
+    line-height: 1.6;
+    width: 91%;
+    padding: 10px;
+    margin-bottom: 60px;
+    border: 1px solid rgb(189, 187, 187);
+}
+
+#container .choose-food .food-demo {
+    display: flex;
+    width: 100%;
+}
+
+#container .choose-food__menu .item {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+#container .choose-food .item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+#container .choose-food .item:hover img,
+#container .choose-food .item:hover .name {
+    color: var(--primary-orange-color);
+}
+
+#container .choose-food .item .name {
+    transition: 0.3s;
+}
+
+#container .choose-food__menu .item .price {
+    color: var(--primary-orange-color);
+    margin-left: 20px;
+    opacity: 1;
+}
+
+#container .choose-food__menu .item:hover .price{
+    animation: movePrice forwards 0.5s;
+}
+
+@keyframes movePrice {
+    from {
+        opacity: 0;
+        margin-left: 50px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 20px;
+    }
+}
+
+#container .choose-food .img-demo {
+    overflow: hidden;
+    height: 350px;
+    border-radius: 10px
+}
+
+#container .choose-food .img-demo img {
+    width: 100%;
+}
+
+#container .choose-food .title {
+    font-weight: 400;
+    margin: 30px auto;
+    display: block;
+    padding: 20px 60px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border-bottom: 2px solid var(--primary-orange-color);
+}
+
+#container .choose-food .title:hover {
+    background: var(--primary-orange-color);
+    color: #333;
+}
+
+#container .choose-food button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: var(--primary-orange-color);
+    border: 2px solid var(--primary-orange-color);
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#container .choose-food button:hover {
+    background-color: transparent;
+    color: var(--primary-orange-color);
+}
+
+#container .team.w-90 {
+    display: block;
+}
+
+#container .team .member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#container .team .item {
+    width: 30%;
+    border: 1px solid rgb(221, 216, 216);    
+    border-radius: 10px 10px 0px 0;
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#container .team img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+#container .team .social {
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    width: 100%;
+}
+
+#container .team a {
+    text-decoration: none;
+}
+
+@keyframes moveSocialMember {
+    from {
+        opacity: 0;
+        top: 100%
+    }
+    to {
+        opacity: 1;
+        top: 40%;
+    }
+}
+
+#container .team .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 300px;
+    color: white;
+    transition: 0.3s;
+    background-color: var(--primary-orange-color);
+}
+
+#container .team .item:hover .social{
+    animation: moveSocialMember forwards 0.5s;
+}
+
+#container .team .item:hover img {
+    transform: translateY(-10px);
+    opacity: 0.7;
+}
+
+#container .team .fa:hover {
+    background-color: var(--primary-green-color);
+}
+
+#container .member .item h2 {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#container .member .item span {
+    margin: 100px;
+}
+
+#container .contact-us.w-90 {
+    display: block;
+}
+
+#container .contact-us .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: rgb(243, 243, 243);
+}
+
+#container .contact-us .item {
+    display: flex;
+}
+
+#container .contact-us .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--primary-orange-color);
+}
+
+#container .contact-us .fa {
+    padding: 20px 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+#container .contact-us .text .fa {
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    color: var(--primary-orange-color);
+}
+
+#container .contact-us .fa:hover {
+    color: var(--primary-orange-color);
+    background-color: var(--primary-green-color);
+}
+
+#container .contact-us .form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+#container .contact-us form {
+    background-color: white; 
+    padding: 0;   
+    text-align: left;
+    margin-left: 60px;
+}
+
+#container .contact-us input {
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+#container .contact-us input:focus {
+    border: 1px solid var(--primary-orange-color);
+}
+
+#container .contact-us button {
+    margin-top: 30px;
+    width: 200px;
+    color: white;
+    border: 2px solid var(--primary-orange-color);
+    background-color: var(--primary-orange-color);
+}
+
+#container .contact-us button:hover {
+    color: var(--primary-orange-color);
+}
+
+#container .contact-us .form img {
+    width: 600px;
+}
+
+#container .food-blog.w-90 {
+    display: block;
+}
+
+#container .food-blog .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#container .food-blog .item {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#container .food-blog img {
+    width: 100%;
+    width: 600px;
+    border-radius: 20px;
+}
+
+#container .food-blog .text {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgb(167, 165, 165) 1px 1px 10px;
+}
+
+#container .food-blog .icon {
+    margin: 10px;
+    color: var(--primary-orange-color);
+    font-size: 17px;
+}
+
+#container .food-blog .fa {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#container .food-blog .fa:hover {
+    color: var(--primary-green-color);
+}
+
+#container .food-blog button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: var(--primary-orange-color);
+    border: 2px solid var(--primary-orange-color);
+}
+
+#container .food-blog button:hover {
+    background: transparent;
+    color: var(--primary-orange-color);
+}
+/* End Container */
+
+
+footer {
+    padding: 50px 0;
+    background-color: rgb(243, 243, 243);
+}
+
+footer .w-90 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: var(--primary-orange-color);
+}
+
+footer .space {
+    height: 2px;
+    width: 50px;
+    margin: 10px 0;
+    background-color: var(--primary-green-color);
+}
+
+footer .our-address {
+    width: 600px;
+    margin-right: 100px;
+}
+
+footer .our-address a{
+    text-decoration: none;
+}
+
+footer .our-address .fa {
+    color: var(--primary-orange-color);
+    font-size: 19px;
+}
+
+footer .our-address .social .fa {
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+    color: white;
+    background: var(--primary-orange-color);
+}
+
+footer .our-address .social .fa:hover {
+    background-color: var(--primary-green-color);
+}
+
+footer .our-address .address div,
+footer .quick-link div {
+    margin: 15px 0;
+}
+
+footer .quick-link {
+    width: 500px;
+    margin-right: 100px;
+}
+
+footer .quick-link .fa {
+    color: var(--primary-orange-color);
+    margin-right: 5px;
+}
+
+footer .quick-link a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #333;
+}
+
+footer .quick-link a:hover {
+    letter-spacing: 2px;
+    color: var(--primary-orange-color);
+}
+
+footer .newletter p {
+    margin: 15px 0;
+}
+
+footer .newletter .send-mail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(221, 216, 216);
+}
+
+footer .newletter input,
+footer .newletter button {
+    border: none;
+    font-size: 18px;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+}
+
+footer .newletter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--primary-orange-color);
+    background: var(--primary-orange-color);
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer .newletter button:hover {
+    background-color: transparent;
+    color: orange;
+}
+
+.modal-book {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+#container .modal-book h2 {
+    margin-top: 20px;
+    color: var(--primary-green-color);
+}
+
+.modal-book .book-contact {
+    position: absolute;
+    top: 0%;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#container .modal-book form {
+    background-color: transparent;
+}
+
+#container .modal-book input {
+    color: #333;
+    transition: 0.3s;
+    border: 1px solid rgb(189, 187, 187);
+}
+
+#container .modal-book input:focus {
+    border: 1px solid var(--primary-green-color);
+}
+
+#container .modal-book button{
+    color: #fff;
+    border: 2px solid var(--primary-orange-color);
+    background-color: var(--primary-orange-color);
+}
+
+#container .modal-book button:hover {
+    color: var(--primary-orange-color);
+}
+
+#container .modal-book .fa {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    right: 10px;
+}
+
+#container .modal-book .fa:hover {
+    opacity: 0.8;
+}

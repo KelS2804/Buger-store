@@ -1,0 +1,28 @@
+.w-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: calc(100% - 60%);
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
